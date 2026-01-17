@@ -1,0 +1,78 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'about.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<center>
+    <br><br>
+    <h1>About This Project</h1>
+    <br>
+
+    <p style="width:70%; font-size:18px; line-height:1.6;">
+        This ToDo application is a task management system developed using the Django
+        framework. The main goal of this project is to help users organize their daily
+        tasks efficiently by providing a simple and user-friendly interface.
+    </p>
+
+    <br><br>
+
+    <h2>Key Features</h2>
+    <br>
+    <ul style="list-style:none; font-size:17px;">
+        <li>✔ Add new tasks with title and description</li>
+        <li>✔ Update existing tasks</li>
+        <li>✔ Mark tasks as completed</li>
+        <li>✔ Restore completed or deleted tasks</li>
+        <li>✔ Trash system for safe deletion</li>
+        <li>✔ Clean and responsive UI</li>
+    </ul>
+
+    <br><br>
+
+    <h2>Technology Used</h2>
+    <br>
+    <ul style="list-style:none; font-size:17px;">
+        <li>🔹 Python</li>
+        <li>🔹 Django Framework</li>
+        <li>🔹 HTML5</li>
+        <li>🔹 CSS3</li>
+        <li>🔹 Django Template Inheritance</li>
+    </ul>
+
+    <br><br>
+
+    <h2>Purpose of This Project</h2>
+    <br>
+    <p style="width:70%; font-size:18px; line-height:1.6;">
+        This project was created as part of my learning journey in Python full-stack
+        development. It helped me understand important Django concepts such as CRUD
+        operations, URL routing, views, templates, static files, and frontend-backend
+        integration.
+    </p>
+
+    <br><br>
+
+    <h2>About the Developer</h2>
+    <br>
+    <p style="width:70%; font-size:18px; line-height:1.6;">
+        I am a Computer Science student passionate about web development and backend
+        technologies. This ToDo project reflects my practical understanding of Django
+        and my interest in building real-world web applications.
+    </p>
+
+    <br><br>
+
+    <p style="font-size:16px;">
+        Future improvements may include user authentication, user-specific tasks,
+        and advanced UI enhancements.
+    </p>
+
+    <br><br>
+</center>
+
+{% endblock %}

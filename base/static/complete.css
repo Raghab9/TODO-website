@@ -1,0 +1,119 @@
+/* =========================
+   GLOBAL BASE (MATCH HOME)
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a2a2f, #1f3b44, #244b57);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* =========================
+   PAGE HEADING
+========================= */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #38ef7d;
+    text-shadow: 0 0 15px rgba(56, 239, 125, 0.6);
+}
+
+/* =========================
+   TOP ACTION BUTTONS
+========================= */
+.all {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.all a {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 700;
+    color: #0f2027;
+    background: linear-gradient(135deg, #38ef7d, #11998e);
+    transition: all 0.3s ease;
+}
+
+.all a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(56, 239, 125, 0.5);
+}
+
+/* =========================
+   COMPLETED TASK CARD
+========================= */
+h2 {
+    width: 60%;
+    margin: 15px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    font-weight: 500;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
+
+h2:hover {
+    background: rgba(56, 239, 125, 0.15);
+    transform: scale(1.02);
+}
+
+/* =========================
+   OPERATION BUTTONS
+========================= */
+.op {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.op a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff512f, #f09819);
+    transition: all 0.3s ease;
+}
+
+.op a:nth-child(2) {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.op a:hover {
+    transform: scale(1.08);
+    opacity: 0.9;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    h2 {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .all {
+        flex-direction: column;
+    }
+
+    .op {
+        flex-direction: column;
+    }
+}

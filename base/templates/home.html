@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<center>
+    <h1>home page</h1>
+    <div class="move">
+        <span class="typedtext" id="pyd"> <b><u>Let's do it together buddy.</u></b></span>
+        <span class="typed-cursor" aria-hidden="true">|</span>
+    </div>
+    
+    
+    <br> <br>
+    <div class="all">
+        <a href="{% url 'delete_all' %}">DELETE ALL</a>
+        <a href="{% url 'complete_all' %}">COMPLETE ALL</a>
+    </div>
+    <br> <br>
+    {% for i in data %}
+    <h2>
+        {{i.title}} // {{i.desc}}
+    </h2>
+    <br>
+    <div class="op">
+        <a href="{% url 'update' i.id %}">UPDATE</a>
+        <a href="{% url 'delete' i.id %}">DELETE</a>
+        <a href="{% url 'complete_' i.id %}">COMPLETE</a>
+    </div>
+    {% endfor %}
+</center>
+{% endblock %}

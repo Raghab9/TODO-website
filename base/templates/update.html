@@ -1,0 +1,27 @@
+
+
+{% extends 'main.html' %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'update.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<center>
+    <br> <br> <br>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">Title</label>
+        <input type="text" name="title" id="" value="{{data.title}}"><br><br>
+
+        <label for="">Desc</label>
+        <input type="text" name="desc" id="" value="{{data.desc}}"><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</center>
+
+{% endblock %}

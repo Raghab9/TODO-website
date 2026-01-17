@@ -1,0 +1,105 @@
+/* =========================
+   GLOBAL BASE (MATCH ADD)
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+form {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    width: 420px;
+    padding: 35px 40px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   LABELS
+========================= */
+label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #c7fff4;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   INPUT FIELDS
+========================= */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background: rgba(0, 255, 213, 0.18);
+    box-shadow: 0 0 12px rgba(0, 255, 213, 0.6);
+}
+
+/* =========================
+   SUBMIT BUTTON (UPDATE)
+========================= */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #0f2027;
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(91, 134, 229, 0.5);
+    background: linear-gradient(135deg, #5b86e5, #36d1dc);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 500px) {
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+}
